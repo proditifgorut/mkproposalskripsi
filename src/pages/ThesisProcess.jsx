@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Lightbulb, Search, Target, ClipboardList, FileText, Users, CheckSquare, Rocket, 
-  BarChart, Book, FileCheck, GraduationCap, Download, ChevronRight 
+  BarChart, Book, FileCheck, GraduationCap, Download, ChevronRight, ArrowRight
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ThesisProcess = () => {
   const [activeTab, setActiveTab] = useState('proposal');
@@ -257,12 +258,36 @@ const ThesisProcess = () => {
           ))}
         </motion.div>
 
-        {/* CTA Section */}
+        {/* SLR & Journal Guide CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-16 bg-white rounded-xl shadow-lg p-8"
+        >
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Panduan Lanjutan</h2>
+              <p className="text-gray-600 max-w-2xl">
+                Tertarik menggunakan metode Systematic Literature Review (SLR) atau ingin mempublikasikan hasil skripsi Anda ke jurnal?
+              </p>
+            </div>
+            <Link
+              to="/panduan-slr-jurnal"
+              className="mt-4 md:mt-0 bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors flex items-center space-x-2"
+            >
+              <span>Lihat Panduan SLR & Jurnal</span>
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </div>
+        </motion.div>
+
+        {/* Download Checklist CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-16 bg-gradient-to-r from-indigo-600 to-purple-700 rounded-xl text-white p-8 text-center"
+          className="mt-8 bg-gradient-to-r from-indigo-600 to-purple-700 rounded-xl text-white p-8 text-center"
         >
           <h2 className="text-2xl font-bold mb-4">Siap untuk Memulai Perjalanan Anda?</h2>
           <p className="text-indigo-100 mb-6 max-w-2xl mx-auto">

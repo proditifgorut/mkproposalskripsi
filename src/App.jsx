@@ -10,6 +10,7 @@ import DataAnalysis from './pages/DataAnalysis';
 import MethodologyExamples from './pages/MethodologyExamples';
 import ResearchTools from './pages/ResearchTools';
 import ThesisProcess from './pages/ThesisProcess';
+import SlrAndJournalGuide from './pages/SlrAndJournalGuide';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/contoh-metodologi" element={<MethodologyExamples />} />
             <Route path="/tools-penelitian" element={<ResearchTools />} />
             <Route path="/tahapan-penyusunan" element={<ThesisProcess />} />
+            <Route path="/panduan-slr-jurnal" element={<SlrAndJournalGuide />} />
           </Routes>
         </main>
         <Footer />

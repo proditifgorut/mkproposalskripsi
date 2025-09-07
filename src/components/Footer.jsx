@@ -32,6 +32,7 @@ const Footer = () => {
               <li><a href="/pendekatan-penelitian" className="text-gray-300 hover:text-white transition-colors">Pendekatan Penelitian</a></li>
               <li><a href="/tahapan-penyusunan" className="text-gray-300 hover:text-white transition-colors">Tahapan Penyusunan</a></li>
               <li><a href="/contoh-metodologi" className="text-gray-300 hover:text-white transition-colors">Contoh Metodologi</a></li>
+              <li><a href="/panduan-slr-jurnal" className="text-gray-300 hover:text-white transition-colors">Panduan SLR & Jurnal</a></li>
             </ul>
           </div>
 
